@@ -1,0 +1,6 @@
+How to reproduce issue:
+1. npm install
+2. npm run webpack
+3. file app/babel-sourcemaps-issue.js.map does not contain Typescript code
+
+The issue does not occur when using @babel/core 7.17.2.

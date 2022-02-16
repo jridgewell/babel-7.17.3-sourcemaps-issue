@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    // Type Checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    // Modules
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "types": [],
+    // Emit
+    "declaration": true,
+    "importHelpers": true,
+    "importsNotUsedAsValues": "error",
+    "newLine": "lf",
+    "noEmitOnError": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "stripInternal": true,
+    // Interop Constraints
+    "forceConsistentCasingInFileNames": true,
+    // Language and Environment
+    "lib": [
+      "DOM",
+      "ES2020"
+    ],
+    "target": "ES2020",
+  }
+}
