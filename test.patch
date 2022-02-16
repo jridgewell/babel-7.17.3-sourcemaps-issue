@@ -1,0 +1,12 @@
+--- node_modules/@babel/core/lib/transformation/file/merge-map.js	2022-02-15 16:16:37.000000000 -0500
++++ node_modules/@babel/core/lib/transformation/file/merge-map.js	2022-02-15 16:16:37.000000000 -0500
+@@ -17,7 +17,9 @@
+
+ function mergeSourceMap(inputMap, map, source) {
+   let found = false;
++  console.log(source);
+   const result = _remapping()(rootless(map), (s, ctx) => {
++    console.log(s);
+     if (s === source && !found) {
+       found = true;
+       ctx.source = "";
