@@ -27,5 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run webpack
+    - run: cp test.patch 'node_modules/@babel/core/lib/transformation/file/merge-map.js'
     - run: ls app
     - run: cat 'app\\*.map'
