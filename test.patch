@@ -17,9 +17,9 @@ function _remapping() {
 
 function mergeSourceMap(inputMap, map, source) {
   let found = false;
-  console.log(source);
+  console.log({ source });
   const result = _remapping()(rootless(map), (s, ctx) => {
-    console.log(s);
+    console.log({ s });
     if (s === source && !found) {
       found = true;
       ctx.source = "";
