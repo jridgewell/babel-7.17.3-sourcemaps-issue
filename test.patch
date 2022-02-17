@@ -15,7 +15,8 @@ function _remapping() {
   return data;
 }
 
-function mergeSourceMap(inputMap, map, source) {
+function mergeSourceMap(inputMap, map, sourceFileName) {
+  const source = sourceFileName.replace(/\\/g, "/");
   let found = false;
   console.log({ source });
   const result = _remapping()(rootless(map), (s, ctx) => {
