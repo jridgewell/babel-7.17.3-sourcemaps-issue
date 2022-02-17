@@ -27,4 +27,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run webpack
-    - run: cat 'app\babel-sourcemaps-issue.js.map'
+    - run: cat 'app\\babel-sourcemaps-issue.js.map'
